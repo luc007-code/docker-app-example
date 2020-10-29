@@ -19,6 +19,11 @@ if __name__ == '__main__':
     server.socket_port = 80
     server.thread_pool = 30
 
+    # For SSL Support
+    server.ssl_module            = 'pyopenssl'
+    server.ssl_certificate       = 'ssl/certificate.crt'
+    server.ssl_private_key       = 'ssl/private.key'
+    server.ssl_certificate_chain = 'ssl/bundle.crt'
 
     # Subscribe this server
     server.subscribe()
