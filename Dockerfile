@@ -7,4 +7,4 @@ ADD . /app
 
 EXPOSE 80
 
-CMD ["python", "/app/server.py"]
+ENTRYPOINT ["python", "/app/server.py"]
